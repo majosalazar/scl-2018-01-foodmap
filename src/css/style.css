@@ -1,0 +1,13 @@
+#splash {
+  display: block;
+  background-color: #e3170a;
+  text-align: center;
+}
+
+#imgLogo {
+  width: 70%;
+}
+
+#main {
+  display: block;
+}
