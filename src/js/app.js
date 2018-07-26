@@ -1,23 +1,13 @@
-/*
-//probando la capacidad del navegador de geolocalizacion
-function findMe() {
-  let output = document.getElementById('map');
-  if (navigator.geolocation) {
-    console.log('geolocalización activada');
-    
-  }else {
-    console.log('geolocalización no funcional');
-  }
-  function localizacion(posicion) {
-    let latitude = posicion.coords.latitude;
-    let longitude = posicion.coords.longitude;
+window.onload = (() => {
+  /* Para esconder la pantalla de inicio y sale en los segundos*/
+   setTimeout(function hide() { $('#splash').hide('fast');
+   document.getElementById('main').style.display = 'block'; }, 6000);
 
-    output.innerHTML = `<p>${latitude}</p>`;
+   initMap();/* aparece el mapita */
+ 
+});
 
 
-  }
-}
-*/
 
 let map;
 let infowindow;
